@@ -1,0 +1,36 @@
+body {
+  background-color: lightgray;
+  margin: 0;
+  height: 100vh;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  ;
+}
+
+h2 {
+  text-align: center;
+}
+
+.cards {
+  margin: 48px auto;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 18px;
+}
+
+.card {
+  height: 100px;
+  background: rgb(150, 95, 185);
+  border: 6px solid black;
+  cursor: pointer;
+}
+
+button {
+  align-items: center;
+  background-color: rgb(23, 192, 23);
+
+}
