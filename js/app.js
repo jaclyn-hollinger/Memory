@@ -4,9 +4,9 @@
 
 
 /*--------------------- Variables (state) ---------------------*/
-let cards = []
+let cards
 let firstCard, secondCard
-let stopChoices = false
+let winner
 
 
 
@@ -29,4 +29,5 @@ init ()
 function init() {
   cards = []
   winner = false
+  stopChoices = false
 }
