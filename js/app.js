@@ -21,7 +21,7 @@ let messageEl = document.getElementById('message')
 /*---------------------- Event Listeners ----------------------*/
 cardEls.forEach(function(cardEl) {
   cardEl.addEventListener('click')
-  console.log('clicked')
+  // console.log('clicked')
 })
 
 // document.querySelectorAll('card').addEventListener('click', () => console.log('clicked'))
