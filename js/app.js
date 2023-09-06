@@ -1,6 +1,7 @@
 
 /*------------------------- Constants -------------------------*/
-let images = ['brook', 'dusk', 'fog', 'mountain', 'road', 'shore', 'tree', 'waterfall']
+let images = ['brook', 'dusk', 'fog', 'mountain', 'road', 'shore', 'tree', 'waterfall', 'ice', 'waves']
+//is it okay/possible to have more images available than a rendered game needs? I've set up with 16 cards (8 pairs), but I have 10 images?
 
 const cardImageList = () => [
   {imgSrc: './images/brook.jpg', name: 'brook'},
@@ -10,7 +11,9 @@ const cardImageList = () => [
   {imgSrc: './images/road.jpg', name: 'road'},
   {imgSrc: './images/shore.jpg', name: 'shore'},
   {imgSrc: './images/tree.jpg', name: 'tree'},
-  {imgSrc: './images/waterfall.jpg', name: 'waterfall'}
+  {imgSrc: './images/waterfall.jpg', name: 'waterfall'},
+  {imgSrc: './images/ice.jpg', name: 'ice'},
+  {imgSrc: './images/waves.jpg', name: 'waves'}
 ]
 
 
