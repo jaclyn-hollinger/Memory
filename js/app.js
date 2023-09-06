@@ -35,8 +35,19 @@ function init() {
   winner = false
   stopChoices = false
   hasFlippedCard = false
+  render()
 }
 
+function handleClick(evt) {
+  
+}
+
+function render() {
+  updateCards()
+  updateMessage()
+}
+
+updateCards()
 
 
 
