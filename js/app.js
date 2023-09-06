@@ -2,6 +2,17 @@
 /*------------------------- Constants -------------------------*/
 let images = ['brook', 'dusk', 'fog', 'mountain', 'road', 'shore', 'tree', 'waterfall']
 
+const getData = () => [
+  {imgSrc: './images/brook.jpg', name: 'brook'},
+  {imgSrc: './images/dusk.jpg', name: 'dusk'},
+  {imgSrc: './images/fog.jpg', name: 'fog'},
+  {imgSrc: './images/mountain.jpg', name: 'mountain'},
+  {imgSrc: './images/road.jpg', name: 'road'},
+  {imgSrc: './images/shore.jpg', name: 'shore'},
+  {imgSrc: './images/tree.jpg', name: 'tree'},
+  {imgSrc: './images/waterfall.jpg', name: 'waterfall'}
+]
+
 
 /*--------------------- Variables (state) ---------------------*/
 let cardsInPlay
@@ -30,6 +41,7 @@ init ()
 
 function init() {
   const cardImageList = [...images, ...images]
+  // console.log(cardImageList)
   const cardTotal = cardImageList.length
   winner = false
   stopChoices = false
