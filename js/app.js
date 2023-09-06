@@ -7,6 +7,7 @@ let images = ['brook', 'dusk', 'fog', 'mountain', 'road', 'shore', 'tree', 'wate
 let cardsInPlay
 let firstCard, secondCard
 let winner
+let cardTotal
 
 
 
@@ -37,16 +38,15 @@ function init() {
 }
 
 function handleClick(evt) {
-
+  let cardsInPlay = document.getElementById('.card')
+  cardsInPlay.addEventListener('click', function () {
+    cardsInPlay.classList.toggle('is-flipped')
+  })
 }
 
-updateCards() {
+function updateCards() {}
 
-}
-
-function updateMessage() {
-
-}
+function updateMessage() {}
 
 function render() {
   updateCards()
@@ -58,7 +58,9 @@ for (let i = 0; i < cardTotal; i++) {
   let randomIndex = Math.floor(Math.random() * cardImageList.length)
   let image = cardImageList[randomIndex]
   }
-  console.log(cardImageList)
+  
+
+
 
 
 
@@ -90,6 +92,6 @@ for (let i = 0; i < cardTotal; i++) {
 // Set a ‘click’ function that will flip a card when selected.  If a matching set is revealed, the player may click a 3rd and 4th card, and so on, until a mismatch is revealed, which will turn only those mismatch cards back over
 // Create reset functionality
 	// Add a reset button to the HTML that responds to the ‘click’ event and will call the ‘init’ function, so game can be reset without reloading browser
-// Using HTML and CSS, add pictures/images and styling to the cards (<div>),  top and bottom and easily reflect matching pairs when flipped  (I’m still determining the theme of these pictures)
+// Using HTML and CSS, add pictures/images and styling to the cards (<div>),  top and bottom and easily reflect matching pairs when flipped  
 // Add animation feature so when a card is selected, the process of “flipping” is animated
 //  Add sound effects to play when a match is “found”
