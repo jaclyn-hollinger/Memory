@@ -1,6 +1,6 @@
 
 /*------------------------- Constants -------------------------*/
-let cardImages = []
+let cardImages = ['brook', 'dusk', 'fog', 'ice', 'mountain', 'road', 'shore', 'tree', 'waterfall', 'waves']
 
 
 /*--------------------- Variables (state) ---------------------*/
@@ -20,8 +20,7 @@ let messageEl = document.getElementById('message')
 
 /*---------------------- Event Listeners ----------------------*/
 cardEls.forEach(function(cardEl) {
-  cardEl.addEventListener('click')
-  // console.log('clicked')
+  cardEl.addEventListener('click', handleClick)
 })
 
 // document.querySelectorAll('card').addEventListener('click', () => console.log('clicked'))
@@ -31,7 +30,7 @@ cardEls.forEach(function(cardEl) {
 init ()
 
 function init() {
-  cards = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8]
+  cards = []
   winner = false
   stopChoices = false
   hasFlippedCard = false
@@ -39,7 +38,7 @@ function init() {
 }
 
 function handleClick(evt) {
-  
+
 }
 
 function render() {
@@ -48,6 +47,7 @@ function render() {
 }
 
 updateCards()
+
 
 
 
