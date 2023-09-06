@@ -4,7 +4,6 @@ let images = ['brook', 'dusk', 'fog', 'mountain', 'road', 'shore', 'tree', 'wate
 
 
 /*--------------------- Variables (state) ---------------------*/
-let cards
 let cardsInPlay
 let firstCard, secondCard
 let winner
@@ -41,12 +40,26 @@ function handleClick(evt) {
 
 }
 
+updateCards() {
+
+}
+
+function updateMessage() {
+
+}
+
 function render() {
   updateCards()
   updateMessage()
 }
 
-updateCards()
+  
+for (let i = 0; i < cardTotal; i++) {
+  let randomIndex = Math.floor(Math.random() * cardImageList.length)
+  let image = cardImageList[randomIndex]
+  }
+  console.log(cardImageList)
+
 
 
 
