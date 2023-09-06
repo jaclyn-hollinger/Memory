@@ -2,7 +2,7 @@
 /*------------------------- Constants -------------------------*/
 let images = ['brook', 'dusk', 'fog', 'mountain', 'road', 'shore', 'tree', 'waterfall']
 
-const getData = () => [
+const cardImageList = () => [
   {imgSrc: './images/brook.jpg', name: 'brook'},
   {imgSrc: './images/dusk.jpg', name: 'dusk'},
   {imgSrc: './images/fog.jpg', name: 'fog'},
@@ -16,6 +16,7 @@ const getData = () => [
 
 /*--------------------- Variables (state) ---------------------*/
 let cardsInPlay
+let flipCard
 let firstCard, secondCard
 let winner
 let cardTotal
@@ -59,6 +60,15 @@ function handleClick(evt) {
     cardsInPlay.classList.toggle('is-flipped')
   })
 }
+
+
+
+function flipCard() {
+  this.classList.toggle('flipCard')
+}
+
+cardsInPlay.forEach(card => card.addEventListener('click', flipCard))
+
 
 function updateCards() {}
 
