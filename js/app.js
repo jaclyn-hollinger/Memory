@@ -1,6 +1,6 @@
 
 /*------------------------- Constants -------------------------*/
-let cardImages = ['brook', 'dusk', 'fog', 'ice', 'mountain', 'road', 'shore', 'tree', 'waterfall', 'waves']
+let images = ['brook', 'dusk', 'fog', 'mountain', 'road', 'shore', 'tree', 'waterfall']
 
 
 /*--------------------- Variables (state) ---------------------*/
@@ -8,7 +8,6 @@ let cards
 let cardsInPlay
 let firstCard, secondCard
 let winner
-let hasFlippedCard
 
 
 
@@ -30,7 +29,8 @@ cardEls.forEach(function(cardEl) {
 init ()
 
 function init() {
-  cards = []
+  const cardImageList = [...images, ...images]
+  const cardTotal = cardImageList.length
   winner = false
   stopChoices = false
   hasFlippedCard = false
@@ -74,8 +74,7 @@ updateCards()
 // Define the required constants (Fischer Yates shuffle)
 // Define the locations of matching pairs of cards on the board? Or randomize with each reset: Utilize a shuffling method (Fisher Yates)
 // Handle a player clicking a card with a `handleClick` function
-// Set a ‘click’ function that will flip a card when selected, but each card can only be selected once per game, and clicking the board instead of the actual card will 
-// result in no action taken on the board. If a matching set is revealed, the player may click a 3rd and 4th card, and so on, until a mismatch is revealed, which will turn only those mismatch cards back over
+// Set a ‘click’ function that will flip a card when selected.  If a matching set is revealed, the player may click a 3rd and 4th card, and so on, until a mismatch is revealed, which will turn only those mismatch cards back over
 // Create reset functionality
 	// Add a reset button to the HTML that responds to the ‘click’ event and will call the ‘init’ function, so game can be reset without reloading browser
 // Using HTML and CSS, add pictures/images and styling to the cards (<div>),  top and bottom and easily reflect matching pairs when flipped  (I’m still determining the theme of these pictures)
