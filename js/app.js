@@ -27,11 +27,15 @@ let cardEls = document.querySelectorAll('cards')
 
 let messageEl = document.getElementById('message')
 
+let resetBtn = document.getElementById('button')
+
 
 /*---------------------- Event Listeners ----------------------*/
 cardEls.forEach(function(cardEl) {
   cardEl.addEventListener('click', handleClick)
 })
+
+resetBtn.addEventListener('click', init)
 
 // document.querySelectorAll('card').addEventListener('click', () => console.log('clicked'))
 
