@@ -66,16 +66,17 @@ function handleClick(evt) {
 
 
 
-function flipCard() {
-  this.classList.toggle('flipCard')
-}
+// function flipCard() {
+//   this.classList.toggle('flipCard')
+// }
 
-cardsInPlay.forEach(card => card.addEventListener('click', flipCard))
+// cardsInPlay.forEach(card => card.addEventListener('click', flipCard))
 
 
 function updateCards() {}
 
 function updateMessage() {}
+
 
 function render() {
   updateCards()
@@ -97,7 +98,7 @@ for (let i = 0; i < cardTotal; i++) {
 
 
 // ---------------------PSEUDO CODE----------------------
-// Define the required variables used to track the state of the game:
+  // Define the required variables used to track the state of the game:
 	// A variable named Cards (to represent the state of the cards on the board)
 	// A variable named Winner to represent when the game has been won (all matches have been found)
 	// An array for the cardsInPlay
