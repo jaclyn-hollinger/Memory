@@ -9,11 +9,12 @@ body {
 h1 {
   text-align: center;
   font-size: 40px;
-  font-family:
+  font-family: 'Kavoon', cursive;
 }
 
 h3 {
   text-align: center;
+  font-family: 'Kavoon', cursive;
 }
 
 .cards {
