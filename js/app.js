@@ -3,7 +3,7 @@
 let images = ['brook', 'dusk', 'fog', 'mountain', 'road', 'shore', 'tree', 'waterfall', 'ice', 'waves']
 //is it okay/possible to have more images available than a rendered game needs? I've set up with 16 cards (8 pairs), but I have 10 images?
 
-const cardImageList = () => [
+const cardImageList = [
   {imgSrc: './images/brook.jpg', name: 'brook'},
   {imgSrc: './images/dusk.jpg', name: 'dusk'},
   {imgSrc: './images/fog.jpg', name: 'fog'},
@@ -27,7 +27,7 @@ let cardTotal
 
 
 /*----------------- Cached Element References -----------------*/
-let cardEls = document.querySelectorAll('cards')
+let cardEls = document.querySelectorAll('.card')
 
 let messageEl = document.getElementById('message')
 
@@ -59,9 +59,12 @@ function init() {
 
 function handleClick(evt) {
   let cardsInPlay = document.getElementById('.card')
-  cardsInPlay.addEventListener('click', function () {
-    cardsInPlay.classList.toggle('is-flipped')
-  })
+  console.log('card has been clicked', evt.target.id)
+  let cardIdNum = evt.target.id.split('-')
+  console.log(parseInt(cardIdNum[cardIdNum.length-1]))
+  // cardsInPlay.addEventListener('click', function () {
+  //   cardsInPlay.classList.toggle('is-flipped')
+  // })
 }
 
 
@@ -87,7 +90,7 @@ function render() {
 for (let i = 0; i < cardTotal; i++) {
   let randomIndex = Math.floor(Math.random() * cardImageList.length)
   let image = cardImageList[randomIndex]
-  }
+}
   
 
 
